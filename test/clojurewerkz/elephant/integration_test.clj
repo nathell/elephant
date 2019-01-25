@@ -102,6 +102,9 @@
         (ii/delete i)
         (catch InvalidRequestException ire))))
 
+  (deftest epic-fail
+    (is false))
+
   (deftest test-account-retrieve
     (let [m (ea/retrieve)]
       (is (:id m))
